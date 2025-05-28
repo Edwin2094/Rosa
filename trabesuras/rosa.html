@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Haz clic aquí</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    #mensaje {
+      display: none;
+      margin-top: 30px;
+    }
+    img {
+      width: 150px;
+      height: auto;
+    }
+    a {
+      font-size: 20px;
+      text-decoration: none;
+      background: #ff0055;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    a:hover {
+      background: #cc0044;
+    }
+  </style>
+</head>
+<body>
+
+  <a onclick="mostrarMensaje()">🌹 Dar clic aquí</a>
+
+  <div id="mensaje">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Rose_icon.svg/1024px-Rose_icon.svg.png" alt="">
+    <h2>Gay el que le dio clip  🌈</h2>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("mensaje").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
